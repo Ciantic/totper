@@ -26,3 +26,7 @@ Example:
 ```
 cargo install totper
 ```
+
+## How to store secrets
+
+I use this with GPG based [pass](https://www.passwordstore.org/) password manager, which keeps the secrets in GPG encrypted files.
