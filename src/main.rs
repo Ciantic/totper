@@ -14,7 +14,7 @@ fn print_usage() {
     println!("  Note: practically all services use sha1 as default");
     println!("");
     println!("Example: ");
-    println!("  totp KZXW6ZDPN4");
+    println!("  totper KZXW6ZDPN4");
     println!("  766369");
     println!("");
     println!("Repository: https://github.com/Ciantic/totp-cli");

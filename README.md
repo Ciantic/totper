@@ -16,7 +16,7 @@ Usage: totper SECRET <STEP> <DIGITS> <ALG> <TIMESTAMP>
   Note: practically all services use sha1 as default
 
 Example:
-  totp KZXW6ZDPN4
+  totper KZXW6ZDPN4
   766369
 
 ```
