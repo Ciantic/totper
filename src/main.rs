@@ -26,8 +26,9 @@ fn print_usage() {
 }
 
 fn try_do(args: Vec<String>) -> Result<String, String> {
-    let secret = args
+    let secret: Vec<u8> = args
         .get(0)
+        .filter(|f| f != &"")
         .map(|f| decode(base32::Alphabet::RFC4648 { padding: false }, &f))
         .flatten()
         .ok_or("Secret was not given in right format")?;
