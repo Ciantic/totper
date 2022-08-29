@@ -54,7 +54,7 @@ fn try_do(args: Vec<String>) -> Result<String, String> {
         |f| f.parse().unwrap(),
     );
 
-    match alg.as_str() {
+    match alg.to_lowercase().as_str() {
         "sha1" => Ok(totp_custom::<Sha1>(
             step,
             digits,
