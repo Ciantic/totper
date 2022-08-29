@@ -74,7 +74,7 @@ fn try_do(args: Vec<String>) -> Result<String, String> {
             secret.as_slice(),
             seconds,
         )),
-        _ => Err("Algorithm must be sha1, sha256 or sha512".to_string()),
+        _ => Err("Algorithm must be SHA1, SHA256 or SHA512".to_string()),
     }
 }
 
