@@ -7,17 +7,23 @@ Very simple totp cli implementation, the real job is done by [totp-lite](https:/
 ```
 Usage: totper SECRET <STEP> <DIGITS> <ALG> <TIMESTAMP>
 
-  SECRET    = Unpadded base32 (RFC4648) encoded secret
+       or pipe the input parameters
+
+  SECRET    = Unpadded Base32 (RFC4648) encoded secret
   STEP      = Seconds of step, defaults to 30
   DIGITS    = Number of digits in the result, defaults to 6
-  ALG       = Algorithm sha1, sha256 or sha512, defaults to sha1
+  ALG       = Algorithm SHA1, SHA256 or SHA512, defaults to SHA1
   TIMESTAMP = UTC Unix timestamp in seconds, defaults to current
 
-  Note: practically all services use sha1 as default
+  Note: practically all services use SHA1 as default
 
-Example:
+Examples:
+  echo KZXW6ZDPN4 | totper
+  766369
+
   totper KZXW6ZDPN4
   766369
+
 
 ```
 

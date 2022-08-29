@@ -15,12 +15,13 @@ fn print_usage() {
     println!("");
     println!("  Note: practically all services use SHA1 as default");
     println!("");
-    println!("Example: ");
+    println!("Examples: ");
+    println!("  echo KZXW6ZDPN4 | totper");
+    println!("  766369");
+    println!("");
     println!("  totper KZXW6ZDPN4");
     println!("  766369");
     println!("");
-    println!("  echo KZXW6ZDPN4 | totper");
-    println!("  766369");
     println!("Repository: https://github.com/Ciantic/totp-cli");
 }
 
