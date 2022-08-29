@@ -30,3 +30,8 @@ cargo install totper
 ## How to store secrets
 
 I use this with GPG based [pass](https://www.passwordstore.org/) password manager, which keeps the secrets in GPG encrypted files.
+
+## TODO:
+
+-   Read from stdin
+-   Maybe change the order of arguments, because secret should be read from STDIN practically always?
