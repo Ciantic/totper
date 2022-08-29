@@ -1,6 +1,6 @@
 # totp cli
 
-Very simple totp cli implementation, the real job is done by [totp-cli](https://github.com/fosskers/totp-lite)
+Very simple totp cli implementation, the real job is done by [totp-lite](https://github.com/fosskers/totp-lite)
 
 ## Usage
 
