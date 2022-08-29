@@ -1,6 +1,6 @@
 [package]
 name = "totper"
-version = "0.1.1"
+version = "0.1.2"
 edition = "2021"
 authors = ["Jari O. O. Pennanen <ciantic@oksidi.com>"]
 license = "MIT"
