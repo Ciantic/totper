@@ -3,7 +3,7 @@ use std::time::{SystemTime, UNIX_EPOCH};
 use totp_lite::{totp_custom, Sha1, Sha256, Sha512};
 
 fn print_usage() {
-    println!("Usage: totp SECRET <STEP> <DIGITS> <ALG> <TIMESTAMP>");
+    println!("Usage: totper SECRET <STEP> <DIGITS> <ALG> <TIMESTAMP>");
     println!("");
     println!("  SECRET    = Unpadded base32 (RFC4648) encoded secret");
     println!("  STEP      = Seconds of step, defaults to 30");

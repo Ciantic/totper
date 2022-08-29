@@ -107,14 +107,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "6bdef32e8150c2a081110b42772ffe7d7c9032b606bc226c8260fd97e0976601"
 
 [[package]]
-name = "totp-cli"
-version = "0.1.0"
-dependencies = [
- "base32",
- "totp-lite",
-]
-
-[[package]]
 name = "totp-lite"
 version = "2.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -124,6 +116,14 @@ dependencies = [
  "hmac",
  "sha-1",
  "sha2",
+]
+
+[[package]]
+name = "totper"
+version = "0.1.0"
+dependencies = [
+ "base32",
+ "totp-lite",
 ]
 
 [[package]]

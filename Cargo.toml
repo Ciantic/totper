@@ -1,11 +1,12 @@
 [package]
-name = "totp-cli"
+name = "totper"
 version = "0.1.0"
 edition = "2021"
-
-[[bin]]
-name = "totp"
-path = "src/main.rs"
+authors = ["Jari O. O. Pennanen <ciantic@oksidi.com>"]
+license = "MIT"
+readme = "README.md"
+keywords = ["cli", "totp"]
+categories = ["command-line-utilities"]
 
 [dependencies]
 totp-lite = "2.0"

@@ -1,11 +1,11 @@
-# totp cli
+# totper - the very simple totp cli
 
 Very simple totp cli implementation, the real job is done by [totp-lite](https://github.com/fosskers/totp-lite)
 
 ## Usage
 
 ```
-Usage: totp SECRET <STEP> <DIGITS> <ALG> <TIMESTAMP>
+Usage: totper SECRET <STEP> <DIGITS> <ALG> <TIMESTAMP>
 
   SECRET    = Unpadded base32 (RFC4648) encoded secret
   STEP      = Seconds of step, defaults to 30
