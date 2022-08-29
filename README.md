@@ -20,3 +20,9 @@ Example:
   766369
 
 ```
+
+## Install
+
+```
+cargo install totper
+```
