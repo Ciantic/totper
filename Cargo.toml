@@ -5,9 +5,10 @@ edition = "2021"
 authors = ["Jari O. O. Pennanen <ciantic@oksidi.com>"]
 license = "MIT"
 readme = "README.md"
-description = "totper is an CLI utility for stateless TOTP generation"
+description = "A tool for stateless TOTP generation"
 keywords = ["cli", "totp"]
 categories = ["command-line-utilities"]
+repository = "https://github.com/Ciantic/totper"
 
 [dependencies]
 totp-lite = "2.0"
