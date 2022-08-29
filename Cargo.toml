@@ -3,6 +3,9 @@ name = "totp-cli"
 version = "0.1.0"
 edition = "2021"
 
+[[bin]]
+name = "totp"
+path = "src/main.rs"
 
 [dependencies]
 totp-lite = "2.0"
