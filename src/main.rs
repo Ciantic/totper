@@ -81,6 +81,15 @@ fn try_do(args: Vec<String>) -> Result<String, String> {
 fn main() {
     let read_from_stdin = !atty::is(atty::Stream::Stdin);
 
+    // If user is trying to supply cli arguments and stdin arguments at the same
+    // time. It is ambigous which method to use
+    if read_from_stdin && std::env::args().len() > 1 {
+        eprintln!("Error: Piping and giving command line arguments at the same time.");
+        println!("");
+        print_usage();
+        std::process::exit(1);
+    }
+
     // Read arguments from cli or stdin
     let args: Vec<String> = if read_from_stdin {
         let mut line = String::new();
